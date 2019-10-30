@@ -167,6 +167,16 @@ class ListingBasic
         $this->status = trim(filter_var($value, FILTER_SANITIZE_STRING));
     }
 
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    public function setImage($value)
+    {
+        $this->image = trim(filter_var($value, FILTER_SANITIZE_STRING));
+    }
+
     /**
      * Convert the current object to an associative array of parameters
      * @return array of object parameters
