@@ -22,6 +22,6 @@ class ListingPremiumTest extends TestCase
     function displayAllowedTagsReturnsValidTags()
     {
         $listing_premium = new ListingPremium(['id'=>1, 'title'=>'title']);
-        $this->assertEquals($listing_premium->allowed_tags, $listing_premium->displayAllowedTags());
+        $this->assertEquals('&lt;p&gt;&lt;br&gt;&lt;b&gt;&lt;strong&gt;&lt;em&gt;&lt;u&gt;&lt;ol&gt;&lt;ul&gt;&lt;li&gt;', $listing_premium->displayAllowedTags());
     }
 }

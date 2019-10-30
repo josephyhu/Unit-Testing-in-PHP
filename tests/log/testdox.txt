@@ -27,5 +27,5 @@ Listing Image
 Listing Premium
  [x] Get status returns premium
  [x] Get description returns valid description
- [ ] Display allowed tags returns valid tags
+ [x] Display allowed tags returns valid tags
 
