@@ -85,7 +85,7 @@ class ListingBasicTest extends TestCase
     function emptyWebsiteReturnsNull()
     {
         $listing_basic = new ListingBasic(['id'=>1, 'title'=>'title', 'website'=>'']);
-        $this->assertEquals(null, $listing_basic->setWebsite(''));
+        $this->assertEquals(null, $listing_basic->getWebsite());
     }
 
     /** @test */
