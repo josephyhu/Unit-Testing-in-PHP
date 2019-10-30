@@ -15,3 +15,17 @@ Listing Basic
  [x] Empty status returns basic
  [x] Set status returns valid status
 
+Listing Featured
+ [x] Get status returns featured
+ [x] Get coc returns valid coc
+
+Listing Image
+ [x] No image
+ [x] Full path image
+ [x] Build path image
+
+Listing Premium
+ [x] Get status returns premium
+ [x] Get description returns valid description
+ [ ] Display allowed tags returns valid tags
+

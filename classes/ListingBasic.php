@@ -169,12 +169,19 @@ class ListingBasic
 
     public function getImage()
     {
+        if ($this->image == '') {
+            return false;
+        }
         return $this->image;
     }
 
     public function setImage($value)
     {
-        $this->image = trim(filter_var($value, FILTER_SANITIZE_STRING));
+        $value = trim(filter_var($value, FILTER_SANITIZE_STRING));
+        if ($value != '' && substr($value, 0, 4) != 'http') {
+            $value = '//' . $value;
+        }
+        $this->image = $value;
     }
 
     /**
